@@ -7,6 +7,7 @@ export const NavBar = () => {
 
 
     const { openSideMenu } = useContext(UiContext);
+
     return (
         <AppBar position="sticky">
             <Toolbar>

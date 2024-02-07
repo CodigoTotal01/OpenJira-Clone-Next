@@ -1,13 +1,42 @@
 import { Layout } from "@/components/layouts";
-import { Typography } from "@mui/material";
+import { EntryList, NewEntry } from "@/context/ui";
+import { Card, CardContent, CardHeader, Grid } from "@mui/material";
 
-// Este archivo es la página principal o de inicio de tu aplicación.
 export default function Home() {
   return (
-    <Layout >
-      <Typography variant="h1" color="primary">
-        Hola mundo
-      </Typography>
+    <Layout title="Home - OpenJira">
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ height: "calc(100vh - 100px )" }}>
+            <CardHeader title="Pendientes"></CardHeader>
+
+            <CardContent>
+              <NewEntry />
+              <EntryList status="pending" />
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ height: "calc(100vh - 100px )" }}>
+            <CardHeader title="Pendientes"></CardHeader>
+
+            <CardContent>
+              <EntryList status="pending" />
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ height: "calc(100vh - 100px )" }}>
+            <CardHeader title="Pendientes"></CardHeader>
+
+            <CardContent>
+              <EntryList status="in-progress" />
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
     </Layout>
-  )
+  );
 }
