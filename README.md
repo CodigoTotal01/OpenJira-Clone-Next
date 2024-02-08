@@ -1,4 +1,5 @@
-![alt text](image.png)
+![image](https://github.com/CodigoTotal01/OpenJira-Clone-Next/assets/85316618/0b13fe21-61c6-49f5-bcc3-d3d5163ee945)
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
